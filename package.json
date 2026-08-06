@@ -1,0 +1,35 @@
+{
+  "name": "mrodgersjs-web",
+  "version": "0.1.0",
+  "description": "Install Mike Rodgers as a local Forward Deployed Engineer teammate",
+  "type": "module",
+  "bin": {
+    "mrodgersjs-web": "./bin/cli.js"
+  },
+  "main": "./bin/cli.js",
+  "files": [
+    "bin/",
+    "data/",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node --test test/cli.test.js"
+  },
+  "keywords": [
+    "fde",
+    "ai",
+    "agent",
+    "cli",
+    "teammate"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "author": "Mike Rodgers <mrodgersjs-web>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mrodgersjs-web/mrodgersjs-web-cli.git"
+  }
+}
