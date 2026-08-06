@@ -1,0 +1,91 @@
+<svg width="1200" height="400" viewBox="0 0 1200 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .kicker{font-family:'JetBrains Mono',monospace;font-size:11px;fill:#C8A96E;letter-spacing:3px;text-transform:uppercase}
+      .title{font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:27px;fill:#F5F0EB}
+      .label{font-family:'Hanken Grotesk','Helvetica Neue',sans-serif;font-size:12px;fill:#F5F0EB;letter-spacing:1px}
+      .mono{font-family:'JetBrains Mono','SF Mono',monospace;font-size:10.5px;fill:#A09890}
+      .mono-gold{font-family:'JetBrains Mono','SF Mono',monospace;font-size:11px;fill:#C8A96E}
+      .caption{font-family:'JetBrains Mono',monospace;font-size:10px;fill:#635D57;letter-spacing:2px;text-transform:uppercase}
+    </style>
+    <linearGradient id="goldFade" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C8A96E" stop-opacity="0.2"/><stop offset="100%" stop-color="#C8A96E" stop-opacity="0.9"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#C8A96E" stop-opacity="0.45"/><stop offset="100%" stop-color="#C8A96E" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="ambient" cx="50%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#171310" stop-opacity="1"/><stop offset="100%" stop-color="#0A0806" stop-opacity="1"/>
+    </radialGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#C8A96E"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="400" fill="url(#ambient)"/>
+
+  <text x="60" y="42" class="kicker">WEB TEAMMATE</text>
+  <text x="60" y="72" class="title">One prompt, three grounded answers</text>
+
+  <!-- terminal window -->
+  <g transform="translate(60,110)">
+    <rect width="230" height="150" rx="8" fill="#0F0D0B" stroke="#A09890" stroke-width="1.4" opacity="0.9"/>
+    <rect width="230" height="26" rx="8" fill="#171310"/>
+    <rect width="230" height="14" y="12" fill="#171310"/>
+    <circle cx="16" cy="13" r="4" fill="#C17767" opacity="0.7"/>
+    <circle cx="32" cy="13" r="4" fill="#D4A857" opacity="0.7"/>
+    <circle cx="48" cy="13" r="4" fill="#8CA88C" opacity="0.7"/>
+    <text x="16" y="50" font-family="'JetBrains Mono',monospace" font-size="10.5" fill="#C8A96E">$ ask "who owns billing?"</text>
+    <text x="16" y="70" font-family="'JetBrains Mono',monospace" font-size="10" fill="#5B564F">resolving context...</text>
+    <rect x="16" y="86" width="6" height="12" fill="#C8A96E" opacity="0.7"/>
+  </g>
+  <text x="175" y="285" text-anchor="middle" class="label">TERMINAL</text>
+
+  <path d="M300,185 H352" stroke="url(#goldFade)" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- cache cylinder -->
+  <g transform="translate(410,185)">
+    <ellipse cx="0" cy="-38" rx="34" ry="10" fill="#141210" stroke="#C8A96E" stroke-width="1.6"/>
+    <path d="M-34,-38 V30 A34,10 0 0 0 34,30 V-38" fill="#141210" stroke="#C8A96E" stroke-width="1.6"/>
+    <ellipse cx="0" cy="30" rx="34" ry="10" fill="none" stroke="#C8A96E" stroke-width="1.6"/>
+    <text y="-56" text-anchor="middle" class="label">CACHE</text>
+    <text y="4" text-anchor="middle" class="mono" font-size="9">hit: 0.4ms</text>
+  </g>
+
+  <path d="M446,185 C480,185 490,185 520,185" stroke="url(#goldFade)" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- knowledge graph cluster -->
+  <g transform="translate(660,185)">
+    <circle r="60" fill="url(#glow)" opacity="0.4"/>
+    <line x1="0" y1="0" x2="-40" y2="-28" stroke="#A09890" stroke-width="1.2" opacity="0.7"/>
+    <line x1="0" y1="0" x2="42" y2="-20" stroke="#A09890" stroke-width="1.2" opacity="0.7"/>
+    <line x1="0" y1="0" x2="-28" y2="34" stroke="#A09890" stroke-width="1.2" opacity="0.7"/>
+    <line x1="0" y1="0" x2="38" y2="32" stroke="#A09890" stroke-width="1.2" opacity="0.7"/>
+    <line x1="-40" y1="-28" x2="42" y2="-20" stroke="#A09890" stroke-width="0.8" opacity="0.35"/>
+    <circle r="14" fill="#141210" stroke="#C8A96E" stroke-width="2"/>
+    <circle cx="-40" cy="-28" r="7" fill="#141210" stroke="#A09890" stroke-width="1.4"/>
+    <circle cx="42" cy="-20" r="7" fill="#141210" stroke="#A09890" stroke-width="1.4"/>
+    <circle cx="-28" cy="34" r="7" fill="#141210" stroke="#A09890" stroke-width="1.4"/>
+    <circle cx="38" cy="32" r="7" fill="#141210" stroke="#A09890" stroke-width="1.4"/>
+    <text y="-78" text-anchor="middle" class="label">KNOWLEDGE GRAPH</text>
+  </g>
+
+  <path d="M726,175 C780,150 800,150 850,140" stroke="url(#goldFade)" stroke-width="1.8" marker-end="url(#arrow)"/>
+  <path d="M726,185 H850" stroke="url(#goldFade)" stroke-width="1.8" marker-end="url(#arrow)"/>
+  <path d="M726,195 C780,225 800,225 850,235" stroke="url(#goldFade)" stroke-width="1.8" marker-end="url(#arrow)"/>
+
+  <!-- 3 outputs -->
+  <g font-family="'JetBrains Mono',monospace" font-size="10.5">
+    <rect x="860" y="120" width="280" height="40" rx="8" fill="#141210" stroke="#C8A96E" stroke-width="1.6"/>
+    <text x="880" y="145" fill="#F5F0EB">owner: @finance-team</text>
+
+    <rect x="860" y="170" width="280" height="40" rx="8" fill="#141210" stroke="#C8A96E" stroke-width="1.6"/>
+    <text x="880" y="195" fill="#F5F0EB">source: billing/OWNERS.md</text>
+
+    <rect x="860" y="220" width="280" height="40" rx="8" fill="#141210" stroke="#C8A96E" stroke-width="1.6"/>
+    <text x="880" y="245" fill="#F5F0EB">confidence: 0.96</text>
+  </g>
+
+  <line x1="60" y1="330" x2="1140" y2="330" stroke="#A09890" stroke-width="1" opacity="0.12"/>
+  <text x="60" y="352" class="caption">cached, graphed, and cited — every time</text>
+</svg>
