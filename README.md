@@ -1,21 +1,34 @@
-# mrodgersjs-web
+<div align="center">
+  <img src="assets/mrodgersjs-web-teammate-hero.png" width="100%" />
+</div>
 
-[![npm](https://img.shields.io/badge/npm-mrodgersjs-web-blue)](https://www.npmjs.com/package/mrodgersjs-web)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+<br/>
 
-Install **Mike Rodgers** as a local Forward Deployed Engineer teammate.
+<div align="center">
+  <h3>mrodgersjs-web</h3>
+  <p><em>Install a Forward Deployed Engineer as a local teammate.</em></p>
+</div>
 
-This CLI ships a small, dependency-free binary that brings Mike's operating principles, gate discipline, and proof-first verification mindset into any repository.
+<div align="center">
 
-## Install
+[![npm](https://img.shields.io/badge/npm-mrodgersjs--web-C8A96E?style=flat-square&labelColor=0A0806)](https://www.npmjs.com/package/mrodgersjs-web)
+![node](https://img.shields.io/badge/node-18%2B-C8A96E?style=flat-square&labelColor=0A0806)
+![deps](https://img.shields.io/badge/dependencies-zero-5B8C5A?style=flat-square&labelColor=0A0806)
+[![license](https://img.shields.io/badge/license-MIT-C8A96E?style=flat-square&labelColor=0A0806)](LICENSE)
+
+</div>
+
+<br/>
+
+> 🥇 A career, packaged as an installable artifact. Instead of a static resume, `npx mrodgersjs-web` brings gate discipline, proof-first verification, and the operating principles behind every shipped repo into your terminal.
+
+## 60-second install
 
 ```bash
 npx mrodgersjs-web
 ```
 
-No global install required. `npx` downloads the package and runs it once.
-
-## Usage
+No global install required — `npx` downloads the package and runs it once.
 
 ```bash
 # Interactive welcome + skill tree
@@ -29,30 +42,44 @@ npx mrodgersjs-web --audit
 
 # Print the flagship clone command
 npx mrodgersjs-web --deploy
-
-# Show version
-npx mrodgersjs-web --version
 ```
 
-## Career as a Package
+## How it works
 
-`mrodgersjs-web` treats a career as an installable artifact. Instead of a static resume, you get a teammate that:
+<div align="center">
+  <img src="assets/architecture.svg" width="100%" alt="mrodgersjs-web architecture: zero-dependency CLI loads a bundled knowledge base of real projects and answers questions with gate discipline and proof-first verification" />
+</div>
 
-- answers questions from a bundled knowledge base of real projects (`proof-studio`, `rigforge`, `jake-studio`);
-- surfaces gate discipline before any outward action;
-- refuses fake-done claims with proof-first verification;
-- ships with zero runtime dependencies so it works anywhere Node 18+ runs.
+<sub align="center">npx install → bundled knowledge base (proof-studio, rigforge, jake-studio) → --ask / --audit / --deploy</sub>
 
-## Knowledge Base
+## Knowledge base
 
-The `data/knowledge.json` file contains 15-20 entries across five categories:
+`data/knowledge.json` ships 15–20 entries across five categories:
 
-- `gates` — Gate-D, approval flows, fail-closed behavior
-- `proof` — ProofPacket format, signature checks, false-done detection
-- `autonomy` — earned autonomy, operator-owned decisions, kill criteria
-- `deployment` — flagship clone workflow, verify-before-ship
-- `principles` — the six operating principles
+| Category | Covers |
+| :-- | :-- |
+| `gates` | Gate-D, approval flows, fail-closed behavior |
+| `proof` | ProofPacket format, signature checks, false-done detection |
+| `autonomy` | Earned autonomy, operator-owned decisions, kill criteria |
+| `deployment` | Flagship clone workflow, verify-before-ship |
+| `principles` | The six operating principles |
 
-## License
+## Why it exists
 
-MIT © Mike Rodgers
+- **A teammate, not a document** — answers questions from a bundled knowledge base of real, shipped projects
+- **Surfaces gate discipline before any outward action** — no answer skips the approval boundary
+- **Refuses fake-done claims** — proof-first verification is the default posture, not a setting
+- **Zero runtime dependencies** — works anywhere Node 18+ runs
+
+## Documentation
+
+| Resource | Description |
+| :-- | :-- |
+| [proof-studio](https://github.com/mrodgersjs-web/proof-studio) | Signed ProofPackets referenced in the knowledge base |
+| [rigforge](https://github.com/mrodgersjs-web/rigforge) | Package-first build platform referenced in the knowledge base |
+| [jake-studio](https://github.com/mrodgersjs-web/jake-studio) | Operator closed loops referenced in the knowledge base |
+| [LICENSE](LICENSE) | MIT |
+
+---
+
+<div align="center"><sub>Built by Mike Rodgers · Forward Deployed Engineer · <a href="https://rodgersintelligence.com">rodgersintelligence.com</a></sub></div>
