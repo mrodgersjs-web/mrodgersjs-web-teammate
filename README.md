@@ -11,7 +11,6 @@
 
 <div align="center">
 
-[![npm](https://img.shields.io/badge/npm-mrodgersjs--web-C8A96E?style=flat-square&labelColor=0A0806)](https://www.npmjs.com/package/mrodgersjs-web)
 ![node](https://img.shields.io/badge/node-18%2B-C8A96E?style=flat-square&labelColor=0A0806)
 ![deps](https://img.shields.io/badge/dependencies-zero-5B8C5A?style=flat-square&labelColor=0A0806)
 [![license](https://img.shields.io/badge/license-MIT-C8A96E?style=flat-square&labelColor=0A0806)](LICENSE)
@@ -20,28 +19,30 @@
 
 <br/>
 
-> 🥇 A career, packaged as an installable artifact. Instead of a static resume, `npx mrodgersjs-web` brings gate discipline, proof-first verification, and the operating principles behind every shipped repo into your terminal.
+> 🥇 A career, packaged as an installable artifact. Instead of a static resume, the Teammate CLI brings gate discipline, proof-first verification, and the operating principles behind every shipped repo into your terminal.
 
 ## 60-second install
 
 ```bash
-npx mrodgersjs-web
+git clone https://github.com/mrodgersjs-web/mrodgersjs-web-teammate.git
+cd mrodgersjs-web-teammate
+node bin/cli.js
 ```
 
-No global install required — `npx` downloads the package and runs it once.
+Zero dependencies — the CLI runs straight from the clone on Node 18+.
 
 ```bash
 # Interactive welcome + skill tree
-npx mrodgersjs-web
+node bin/cli.js
 
 # Ask Mike a question about gates, proof, autonomy, or deployment
-npx mrodgersjs-web --ask "how do I verify a build?"
+node bin/cli.js --ask "how do I verify a build?"
 
 # Print the six operating principles
-npx mrodgersjs-web --audit
+node bin/cli.js --audit
 
 # Print the flagship clone command
-npx mrodgersjs-web --deploy
+node bin/cli.js --deploy
 ```
 
 ## How it works

@@ -63,7 +63,7 @@ function showVersion() {
 }
 
 function showHelp() {
-  print('Usage: npx mrodgersjs-web [options]');
+  print('Usage: node bin/cli.js [options]');
   print('');
   print('Options:');
   print('  --ask <question>   Search the bundled knowledge base for the best matching insight');
