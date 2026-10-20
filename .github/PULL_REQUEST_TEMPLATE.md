@@ -18,8 +18,7 @@
 <!-- Public boundary check. -->
 
 - [ ] No PII, secrets, customer data, or internal paths added
-- [ ] No banned words (unlock, empower, synergy, leverage, disrupt, hustle,
-  utilize, iterate, optimize) in the diff
+- [ ] No banned words in the diff (see CONTRIBUTING.md)
 - [ ] No machine paths like `/Users/...` or `~/Developer/...` left in tracked files
 - [ ] No real model names, real agent names, or unapproved
   third-party names in CLI output
