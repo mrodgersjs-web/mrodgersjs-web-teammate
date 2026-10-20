@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you cite this software in academic work, please use the metadata below."
+title: "mrodgersjs-web"
+version: "0.2.0"
+date-released: "2026-10-19"
+authors:
+  - family-names: "Rodgers"
+    given-names: "Mike"
+type: software
+license: MIT
+url: "https://github.com/mrodgersjs-web/mrodgersjs-web-teammate"
+repository-code: "https://github.com/mrodgersjs-web/mrodgersjs-web-teammate"
+abstract: >-
+  Install Mike Rodgers as a local Forward Deployed Engineer teammate. A
+  zero-dependency Node CLI that ships a bundled knowledge base of real
+  projects and answers questions about gates, proof, autonomy, and
+  deployment.
+keywords:
+  - cli
+  - teammate
+  - fde
+  - agent
+  - ai

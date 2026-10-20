@@ -1,0 +1,65 @@
+name: Bug report
+about: Reproduce the bug with the smallest possible command
+title: "[bug] "
+labels: ["bug"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for filing a bug. This CLI is rule-based and a bug is
+        usually a path-handling or scoring issue. Please include the
+        smallest possible command that reproduces the problem and the
+        exact output you got.
+
+  - type: textarea
+    id: command
+    attributes:
+      label: Command
+      description: >
+        The exact command you ran (for example
+        `node bin/cli.js --ask "how do I verify a build?"`).
+      render: bash
+    validations:
+      required: true
+
+  - type: textarea
+    id: output
+    attributes:
+      label: Output
+      description: The relevant lines from stdout or stderr.
+      render: text
+    validations:
+      required: true
+
+  - type: dropdown
+    id: node
+    attributes:
+      label: Node version
+      options:
+        - "18.x"
+        - "20.x"
+        - "22.x"
+        - "Other (describe in 'Notes')"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options:
+        - macOS
+        - Linux
+        - Windows
+        - "Other (describe in 'Notes')"
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else?
+      description: Optional. Notes on the environment, prior tests, related issues.
+      render: text
