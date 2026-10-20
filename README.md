@@ -1,6 +1,6 @@
 # mrodgersjs-web
 
-[![ci](https://github.com/mrodgersjs-web/mrodgersjs-web-teammate/actions/workflows/ci.yml/badge.svg)](https://github.com/mrodgersjs-web/mrodgersjs-web-teammate/actions/workflows/ci.yml)
+[![CI](https://img.shields.io/github/actions/workflow/status/mrodgersjs-web/mrodgersjs-web-teammate/ci.yml?branch=main&label=CI)](https://github.com/mrodgersjs-web/mrodgersjs-web-teammate/actions/workflows/ci.yml)
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![node](https://img.shields.io/badge/node-18%20%7C%2020%20%7C%2022-blue.svg)](.github/workflows/ci.yml)
 
@@ -146,4 +146,4 @@ See [SECURITY.md](SECURITY.md). Report exploitable bugs to
 
 ---
 
-Built by Mike Rodgers · [rodgersintelligence.com](https://rodgersintelligence.com)
+Built by Mike Rodgers · rodgersintelligence.com

@@ -5,6 +5,36 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+### Added
+
+- `.github/CODEOWNERS` assigning `*` to `@mrodgersjs-web`.
+- `.github/copilot-instructions.md` (1841 bytes): what the package is, the layout,
+  the exact commands (`npm ci`, `npm test`, `npx eslint .`, `npm run check`),
+  conventions (conventional commits, a test for every change, ESM kept, no
+  secrets, no machine paths) and the truth rule that every number in docs comes
+  from a command run in this repository.
+- `test/repo-hygiene.test.js`: 4 checks read from the files on disk that
+  `.github/CODEOWNERS` assigns `*` to `@mrodgersjs-web`, that
+  `.github/copilot-instructions.md` is non-empty, at most 8000 bytes and names a
+  test command, that `README.md` carries a `github/actions/workflow/status` badge,
+  the "Built by Mike Rodgers - rodgersintelligence.com" footer, a test command and
+  only clones `mrodgersjs-web/mrodgersjs-web-teammate`, and that every job under
+  `.github/workflows/` sets `timeout-minutes` and never sets `continue-on-error: true`.
+
+### Changed
+
+- `README.md`: the CI badge now uses the shields
+  `github/actions/workflow/status/mrodgersjs-web/mrodgersjs-web-teammate/ci.yml`
+  form, and the footer is the plain literal
+  "Built by Mike Rodgers - rodgersintelligence.com".
+- `.github/workflows/ci.yml` and `.github/workflows/rig-lattice.yml`:
+  `timeout-minutes: 15` on every job.
+
+### Verified
+
+- Clean `npm ci` (0 vulnerabilities), `npx eslint .` clean, `npm test` 18 pass,
+  0 fail (14 before the hygiene tests).
+
 ## [0.2.0] - 2026-10-19
 
 ### Added
