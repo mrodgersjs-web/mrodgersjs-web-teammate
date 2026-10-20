@@ -1,6 +1,6 @@
 {
   "name": "mrodgersjs-web",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Install Mike Rodgers as a local Forward Deployed Engineer teammate",
   "type": "module",
   "bin": {
@@ -11,10 +11,16 @@
     "bin/",
     "data/",
     "LICENSE",
-    "README.md"
+    "README.md",
+    "CHANGELOG.md",
+    "CODE_OF_CONDUCT.md",
+    "CITATION.cff"
   ],
   "scripts": {
-    "test": "node --test test/cli.test.js"
+    "test": "node --test test/",
+    "test:unit": "node --test test/",
+    "lint": "eslint bin/ test/",
+    "check": "npm run lint && npm test"
   },
   "keywords": [
     "fde",
@@ -24,12 +30,20 @@
     "teammate"
   ],
   "license": "MIT",
+  "type": "module",
   "engines": {
     "node": ">=18"
   },
-  "author": "Mike Rodgers <mrodgersjs-web>",
+  "author": "Mike Rodgers",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mrodgersjs-web/mrodgersjs-web-cli.git"
+    "url": "https://github.com/mrodgersjs-web/mrodgersjs-web-teammate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mrodgersjs-web/mrodgersjs-web-teammate/issues"
+  },
+  "homepage": "https://github.com/mrodgersjs-web/mrodgersjs-web-teammate#readme",
+  "devDependencies": {
+    "eslint": "^9.11.1"
   }
 }
