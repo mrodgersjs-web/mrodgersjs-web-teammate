@@ -15,7 +15,7 @@ function run(args = '') {
 describe('mrodgersjs-web CLI', () => {
   it('--version prints the version', () => {
     const output = run('--version');
-    assert.match(output, /^0\.1\.0/);
+    assert.match(output, /^0\.2\.0/);
   });
 
   it('--audit prints the operating principles', () => {
